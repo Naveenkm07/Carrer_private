@@ -21,12 +21,9 @@
 
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
-| **AI Platform / LLMOps Engineer** | Evaluation, observability, reliability, pipelines | Someone who puts AI in production with metrics |
-| **Agentic Workflows / Automation** | HITL, tooling, orchestration, multi-agent | Someone who builds reliable agent systems |
-| **Technical AI Product Manager** | GenAI/Agents, PRDs, discovery, delivery | Someone who translates business to AI product |
-| **AI Solutions Architect** | Hyperautomation, enterprise, integrations | Someone who designs end-to-end AI architectures |
-| **AI Forward Deployed Engineer** | Client-facing, fast delivery, prototyping | Someone who delivers AI solutions to clients fast |
-| **AI Transformation Lead** | Change management, adoption, org enablement | Someone who leads AI transformation in an org |
+| **Backend Systems Engineer** | Scalability, distributed systems, performance | Someone who builds high-traffic, low-latency systems |
+| **API Platform Engineer** | API design, DX, SDKs, integration | Someone who builds developer-centric API platforms |
+| **DevOps/Infrastructure Engineer** | Kubernetes, IaC, CI/CD, reliability | Someone who builds stable and scalable cloud infra |
 
 ## Your Adaptive Framing
 
@@ -36,12 +33,9 @@
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
-| Platform / LLMOps | Production systems builder, observability, evals | article-digest.md + cv.md |
-| Agentic / Automation | Multi-agent orchestration, HITL, reliability | article-digest.md + cv.md |
-| Technical AI PM | Product discovery, PRDs, metrics | cv.md + article-digest.md |
-| Solutions Architect | System design, integrations, enterprise-ready | article-digest.md + cv.md |
-| Forward Deployed Engineer | Fast delivery, client-facing, prototype to prod | cv.md + article-digest.md |
-| AI Transformation Lead | Change management, team enablement, adoption | cv.md + article-digest.md |
+| Backend Systems | Performance, scaling, high-traffic | cv.md |
+| API Platform | API design, DX, integrations | cv.md |
+| DevOps/Infra | Automation, cloud-native, SRE | cv.md |
 
 ## Your Exit Narrative
 

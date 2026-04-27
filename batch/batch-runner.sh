@@ -350,13 +350,13 @@ process_offer() {
     -e "s|{{ID}}|${esc_id}|g" \
     "$PROMPT_FILE" > "$resolved_prompt"
 
-  # Launch claude -p worker (uses default model from Claude Max subscription)
+  # Launch gemini worker
   local exit_code=0
-  claude -p \
-    --dangerously-skip-permissions \
-    --append-system-prompt-file "$resolved_prompt" \
-    "$prompt" \
-    > "$log_file" 2>&1 || exit_code=$?
+  local prompt_content
+  prompt_content=$(cat "$resolved_prompt")
+  gemini --approval-mode yolo -p "$prompt_content
+
+$prompt" > "$log_file" 2>&1 || exit_code=$?
 
   # Cleanup resolved prompt
   rm -f "$resolved_prompt"
@@ -591,6 +591,11 @@ main() {
   merge_tracker
 
   # Print summary
+  print_summary
+}
+
+main "$@"
+ # Print summary
   print_summary
 }
 
