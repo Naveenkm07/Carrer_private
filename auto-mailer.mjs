@@ -2,6 +2,17 @@ import nodemailer from 'nodemailer';
 import fs from 'fs/promises';
 import path from 'path';
 import dotenv from 'dotenv';
+import http from 'http';
+
+// Create a dummy web server so Render.com thinks this is a web app
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Mailer is running!\n');
+});
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Dummy web server listening on port ${PORT}`);
+});
 
 dotenv.config();
 

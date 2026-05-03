@@ -279,16 +279,16 @@ const server = http.createServer(async (req, res) => {
                 return;
             }
 
-            body.innerHTML = apps.map(app => `
+            body.innerHTML = apps.map(app => \`
                 <tr>
-                    <td>${app.id}</td>
-                    <td>${app.date}</td>
-                    <td><strong>${app.company}</strong></td>
-                    <td>${app.role}</td>
-                    <td><span class="score ${getScoreClass(app.score)}">${app.score}</span></td>
-                    <td><span class="badge status-${app.status.toLowerCase()}">${app.status}</span></td>
+                    <td>\${app.id}</td>
+                    <td>\${app.date}</td>
+                    <td><strong>\${app.company}</strong></td>
+                    <td>\${app.role}</td>
+                    <td><span class="score \${getScoreClass(app.score)}">\${app.score}</span></td>
+                    <td><span class="badge status-\${app.status.toLowerCase()}">\${app.status}</span></td>
                 </tr>
-            `).join('');
+            \`).join('');
         }
 
         function renderPipeline(pipeline) {
@@ -298,13 +298,13 @@ const server = http.createServer(async (req, res) => {
                 return;
             }
 
-            body.innerHTML = pipeline.map(item => `
+            body.innerHTML = pipeline.map(item => \`
                 <tr>
-                    <td><strong>${item.company}</strong></td>
-                    <td>${item.role}</td>
-                    <td><a href="${item.url}" target="_blank" style="color: var(--primary)">Apply &rarr;</a></td>
+                    <td><strong>\${item.company}</strong></td>
+                    <td>\${item.role}</td>
+                    <td><a href="\${item.url}" target="_blank" style="color: var(--primary)">Apply &rarr;</a></td>
                 </tr>
-            `).join('');
+            \`).join('');
         }
 
         function updateStats(apps, pipeline) {
