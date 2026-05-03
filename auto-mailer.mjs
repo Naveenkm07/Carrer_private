@@ -108,6 +108,11 @@ async function main() {
                 count++;
                 console.log(`✅ Email sent to ${companyName}!`);
                 
+                if (count >= 40) {
+                    console.log(`\n⏸️ Batch limit reached (40). Stopping so GitHub Actions can save progress.`);
+                    break;
+                }
+
                 // Safety delay: 2 to 5 minutes
                 const delay = Math.floor(Math.random() * (300000 - 120000 + 1) + 120000);
                 console.log(`⏳ Waiting ${Math.round(delay/1000)} seconds to prevent spam detection...`);
