@@ -184,7 +184,7 @@ Nuevas añadidas a pipeline.md: N
   + {company} | {title} | {query_name}
   ...
 
-→ Execute /career-ops pipeline to evaluate new offers.
+→ Ejecuta /career-ops pipeline para evaluar las nuevas ofertas.
 ```
 
 ## Gestión de careers_url

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveen Kumar K M — Master Resume</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px; /* High density */
+    line-height: 1.3;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 25px 35px;
+  }
+
+  .header { margin-bottom: 12px; text-align: center; }
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a1a2e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .contact-info {
+    font-size: 9px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  .contact-info span { margin: 0 5px; }
+  .header-line { height: 1.5px; background: #1a1a2e; width: 100%; margin: 8px 0; }
+
+  .section { margin-bottom: 10px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+  .item { margin-bottom: 6px; }
+  .item-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 10px; }
+  .item-sub { display: flex; justify-content: space-between; font-style: italic; font-size: 9px; color: #444; margin-bottom: 2px; }
+  
+  ul { padding-left: 12px; margin-top: 2px; }
+  li { margin-bottom: 2px; font-size: 9.5px; }
+
+  .skills-container { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .skill-cat { font-weight: 700; min-width: 80px; }
+
+  a { color: #1a1a2e; text-decoration: none; border-bottom: 0.5px solid #1a1a2e; }
+
+  @media print {
+    body { padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Naveen Kumar K M</h1>
+    <div class="contact-info">
+      <span>Bangalore, India</span> | 
+      <span>+91 [YOUR_PHONE]</span> | 
+      <span>kmnaveenkm85@gmail.com</span> <br>
+      <a href="https://github.com/Naveenkm07">github.com/Naveenkm07</a> | 
+      <a href="https://cse-tau.vercel.app">cse-tau.vercel.app</a> | 
+      <a href="https://linkedin.com/in/naveen-kumar-k-m">linkedin.com/in/naveen-kumar-k-m</a>
+    </div>
+    <div class="header-line"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p style="font-size: 9.5px;">CSE student with 7 months of AI/ML internship experience. Skilled in Python, SQL, and ML workflows (scikit-learn, TensorFlow). Experienced project coordinator through 10+ hackathons. Maintains 70+ GitHub repositories with automated CI/CD pipelines. Seeking to leverage data-driven problem solving and backend expertise in high-growth environments.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="left-col">
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="item">
+          <div class="item-header"><span>AI/ML Intern</span> <span>Ember Quest</span></div>
+          <div class="item-sub"><span>Bangalore, India</span> <span>Feb 2024 – May 2024</span></div>
+          <ul>
+            <li>Developed classification models using **scikit-learn**; improved accuracy by 15% via feature engineering.</li>
+            <li>Optimized data preprocessing pipelines for large-scale agricultural datasets.</li>
+            <li>Collaborated in Agile sprints for rapid model iteration and documentation.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-header"><span>AI/ML Industry Trainee</span> <span>Crystallize Technologies</span></div>
+          <div class="item-sub"><span>Bangalore, India</span> <span>Nov 2023 – Jan 2024</span></div>
+          <ul>
+            <li>Trained in **Deep Learning** and neural network optimization.</li>
+            <li>Delivered 3+ industry projects with comprehensive technical documentation.</li>
+            <li>Presented ML findings to technical stakeholders, ensuring alignment with project goals.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="item">
+          <div class="item-header"><span>B.E. Computer Science</span> <span>NHCE</span></div>
+          <div class="item-sub"><span>CGPA: 8.56</span> <span>2024 – 2027</span></div>
+        </div>
+        <div class="item">
+          <div class="item-header"><span>Diploma Computer Science</span> <span>SJM Polytechnic</span></div>
+          <div class="item-sub"><span>82.12%</span> <span>2021 – 2024</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="section">
+        <div class="section-title">Key Projects</div>
+        <div class="item">
+          <div class="item-header"><span>Soil Fertility Analyzer</span> <span>ML/Python</span></div>
+          <p style="font-size: 9px; margin: 2px 0;">Built ML model with **90%+ accuracy** to predict soil health. Features extensive EDA and feature scaling.</p>
+        </div>
+        <div class="item">
+          <div class="item-header"><span>SecureVault - Data System</span> <span>Flask/SQL</span></div>
+          <p style="font-size: 9px; margin: 2px 0;">Data system with **AES-256 encryption** and RBAC. Improved SQL query efficiency by 40%.</p>
+        </div>
+        <div class="item">
+          <div class="item-header"><span>Spam Email Classifier</span> <span>NLP/scikit-learn</span></div>
+          <p style="font-size: 9px; margin: 2px 0;">Developed NLP pipeline for text feature extraction. Achieved high precision across multiple classifiers.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-container" style="font-size: 9px;">
+          <div><span class="skill-cat">Languages:</span> Python, SQL, C/C++, JS, HTML/CSS</div>
+          <div><span class="skill-cat">AI/ML:</span> TensorFlow, NLP, Pandas, scikit-learn, LLMs</div>
+          <div><span class="skill-cat">Tools:</span> Git, Docker, Jenkins, Azure DevOps, Flask</div>
+          <div><span class="skill-cat">Databases:</span> MySQL, MongoDB, SQLite</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Leadership & Awards</div>
+        <ul style="font-size: 9px;">
+          <li>**2nd Place:** Srujana 2025 Hackathon (ISRO Awarded).</li>
+          <li>**TEDx Board Member:** Event planning & stakeholder relations.</li>
+          <li>**10+ Hackathons:** Led national-level project teams.</li>
+          <li>**70+ Repos:** Active open-source contributor on GitHub.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 9px; gap: 5px;">
+      <div>• Building Intelligent Agents with GenAI (NHCE)</div>
+      <div>• Azure Cloud & AI Fundamentals (NHCE)</div>
+      <div>• Intel AI For All (Jul 2025)</div>
+      <div>• GenAI Powered Data Analytics (Forage)</div>
+      <div>• AI/ML Industry Certification (Crystallize)</div>
+      <div>• AI/ML Internship Certificate (Ember Quest)</div>
+    </div>
+  </div>
+
+</body>
+</html>

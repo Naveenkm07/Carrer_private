@@ -7,17 +7,17 @@ Lee y muestra `data/applications.md`.
 | # | Fecha | Empresa | Rol | Score | Estado | PDF | Report |
 ```
 
-Estados posibles: `Evaluated` → `Applied` → `Responded` → `Contact` → `Interview` → `Offer` / `Rejected` / `Discarded` / `SKIP`
+Estados posibles: `Evaluada` → `Aplicado` → `Respondido` → `Contacto` → `Entrevista` → `Oferta` / `Rechazada` / `Descartada` / `NO APLICAR`
 
-- `Applied` = the candidate sent their application
-- `Responded` = A recruiter/company contacted and the candidate responded (inbound)
-- `Contact` = The candidate proactively contacted someone at the company (outbound, e.g., LinkedIn power move)
+- `Aplicado` = el candidato envió su candidatura
+- `Respondido` = Un recruiter/empresa contactó y el candidato respondió (inbound)
+- `Contacto` = El candidato contactó proactivamente a alguien de la empresa (outbound, ej: LinkedIn power move)
 
-If the user asks to update a status, edit the corresponding row.
+Si el usuario pide actualizar un estado, editar la fila correspondiente.
 
-Also show statistics:
-- Total applications
-- By status
-- Average score
-- % with PDF generated
-- % with report generated
+Mostrar también estadísticas:
+- Total de aplicaciones
+- Por estado
+- Score promedio
+- % con PDF generado
+- % con report generado
