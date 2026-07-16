@@ -1,9 +1,6 @@
 name: Auto Mailer Campaign
 
 on:
-  schedule:
-    # Run every 4 hours (0:00, 4:00, 8:00, 12:00, 16:00, 20:00 UTC)
-    - cron: '0 */4 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub website
 
 permissions:
