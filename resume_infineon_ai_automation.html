@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveen Kumar K M - Resume</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    color: #1a1a1a;
+    width: 210mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    margin: 0 auto;
+    padding: 14mm 16mm 12mm 16mm;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 6px;
+  }
+  .header h1 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #003366;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .contact-row {
+    font-size: 9.5pt;
+    color: #333;
+    word-spacing: 1px;
+  }
+  .contact-row a {
+    color: #003366;
+    text-decoration: none;
+  }
+  .sep { margin: 0 4px; color: #999; }
+
+  /* ── Section ── */
+  .section {
+    margin-top: 7px;
+  }
+  .section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.2px solid #003366;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  /* ── Summary ── */
+  .summary p {
+    font-size: 10pt;
+    color: #222;
+    text-align: justify;
+  }
+
+  /* ── Skills ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    row-gap: 2px;
+    font-size: 10pt;
+  }
+  .skill-label {
+    font-weight: 600;
+    color: #003366;
+  }
+  .skill-value {
+    color: #222;
+  }
+
+  /* ── Experience / Projects ── */
+  .entry {
+    margin-bottom: 5px;
+  }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .entry-title {
+    font-weight: 700;
+    font-size: 10.5pt;
+    color: #1a1a1a;
+  }
+  .entry-meta {
+    font-size: 9.5pt;
+    color: #555;
+    font-style: italic;
+  }
+  .entry-tech {
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 1px;
+  }
+  .entry ul {
+    padding-left: 16px;
+    font-size: 10pt;
+  }
+  .entry ul li {
+    margin-bottom: 1px;
+  }
+
+  /* ── Education ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    margin-bottom: 1px;
+  }
+  .edu-degree {
+    font-weight: 600;
+  }
+  .edu-detail {
+    color: #444;
+    font-size: 9.5pt;
+  }
+
+  /* ── Certifications ── */
+  .cert-list {
+    font-size: 10pt;
+    padding-left: 16px;
+  }
+  .cert-list li {
+    margin-bottom: 1px;
+  }
+
+  /* ── Achievements ── */
+  .ach-list {
+    font-size: 10pt;
+    padding-left: 16px;
+  }
+  .ach-list li {
+    margin-bottom: 1px;
+  }
+
+  /* Print */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<div class="header">
+  <h1>Naveen Kumar K M</h1>
+  <div class="contact-row">
+    Bengaluru, India
+    <span class="sep">|</span> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a>
+    <span class="sep">|</span> <a href="mailto:naveenkm07@email.com">naveenkm07@email.com</a>
+    <span class="sep">|</span> <a href="https://linkedin.com/in/naveenkm07">linkedin.com/in/naveenkm07</a>
+    <span class="sep">|</span> <a href="https://github.com/Naveenkm07">github.com/Naveenkm07</a>
+  </div>
+</div>
+
+<!-- ═══════════ PROFESSIONAL SUMMARY ═══════════ -->
+<div class="section summary">
+  <div class="section-title">Professional Summary</div>
+  <p>
+    Computer Science &amp; Engineering student with 7 months of AI/ML internship experience in model development, data analysis, and automation workflows. Proficient in Python, NLP, and content analytics with hands-on exposure to Generative AI (LLMs, embeddings). Strong written and verbal communication skills demonstrated through 10+ hackathon presentations, TEDx event coordination, and structured project documentation. Eager to leverage AI-driven automation and analytical skills to optimize content creation, review, and publishing workflows at Infineon Technologies.
+  </p>
+</div>
+
+<!-- ═══════════ TECHNICAL SKILLS ═══════════ -->
+<div class="section">
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <span class="skill-label">AI &amp; Automation:</span>
+    <span class="skill-value">Python, scikit-learn, TensorFlow, NLP, Text Classification, Data Preprocessing, ML-Flow, Generative AI (LLMs, Embeddings)</span>
+
+    <span class="skill-label">Content &amp; Analytics:</span>
+    <span class="skill-value">Data Analysis, Data Visualization, Power BI, Content Analytics, Pandas, NumPy, Matplotlib, PySpark</span>
+
+    <span class="skill-label">Data &amp; Tools:</span>
+    <span class="skill-value">MySQL, MongoDB, SQLite, REST APIs, Postman, Flask, Selenium, HTML, CSS, JavaScript</span>
+
+    <span class="skill-label">DevOps &amp; Cloud:</span>
+    <span class="skill-value">Git, GitHub, Azure DevOps, CI/CD Pipelines, Docker, AWS (Basic), Azure (Basic), GCP (Basic)</span>
+
+    <span class="skill-label">Soft Skills:</span>
+    <span class="skill-value">Technical Writing, Documentation, Agile/SDLC, Stakeholder Communication, Team Coordination, Analytical Thinking</span>
+  </div>
+</div>
+
+<!-- ═══════════ PROFESSIONAL EXPERIENCE ═══════════ -->
+<div class="section">
+  <div class="section-title">Professional Experience</div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">AI/ML Intern — Ember Quest</span>
+      <span class="entry-meta">4 Months</span>
+    </div>
+    <ul>
+      <li>Designed and implemented AI-enabled workflows for automated data preprocessing and model evaluation, reducing manual effort by 30%.</li>
+      <li>Leveraged Python and scikit-learn to analyse content performance data across real-world datasets, deriving actionable insights for model improvement.</li>
+      <li>Documented findings and presented analytical reports to team leads, ensuring clear stakeholder communication in an Agile environment.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">AI/ML Industry Trainee — Crystallize Technologies</span>
+      <span class="entry-meta">3 Months</span>
+    </div>
+    <ul>
+      <li>Completed advanced training in machine learning, deep learning, and AI-driven automation techniques for content and data workflows.</li>
+      <li>Authored structured project documentation and delivered presentations on AI project outcomes to mentors and stakeholders.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ KEY PROJECTS ═══════════ -->
+<div class="section">
+  <div class="section-title">Key Projects</div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Spam Email Classifier — AI-Driven Content Analysis</span>
+    </div>
+    <div class="entry-tech">Python, scikit-learn, NLP, Pandas, NumPy</div>
+    <ul>
+      <li>Built an NLP-based AI classification model for automated content analysis and spam detection with high precision and recall.</li>
+      <li>Implemented end-to-end text preprocessing pipeline including tokenization, vectorization, and feature engineering to analyse content patterns.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">Soil Fertility Analyzer — Data Analytics &amp; Automation</span>
+    </div>
+    <div class="entry-tech">Python, scikit-learn, Pandas, NumPy, Matplotlib</div>
+    <ul>
+      <li>Developed automated ML classification pipeline achieving 90%+ accuracy, with data-driven insights derived from agricultural datasets.</li>
+      <li>Created interactive data visualizations and performance dashboards for continuous improvement analysis.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-title">SecureVault — Data Management System</span>
+    </div>
+    <div class="entry-tech">Python, SQL, Flask, AES-256 Encryption</div>
+    <ul>
+      <li>Engineered a structured, reusable data management system with optimized SQL queries improving data retrieval efficiency by 40%.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ EDUCATION ═══════════ -->
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="edu-row">
+    <span><span class="edu-degree">B.E. in Computer Science &amp; Engineering</span> — New Horizon College of Engineering, Bengaluru</span>
+    <span class="edu-detail">2024–2027 | CGPA: 8.56</span>
+  </div>
+  <div class="edu-row">
+    <span><span class="edu-degree">Diploma in Computer Science Engineering</span> — SJM Polytechnic, Chitradurga</span>
+    <span class="edu-detail">2021–2024 | 82.12%</span>
+  </div>
+</div>
+
+<!-- ═══════════ CERTIFICATIONS ═══════════ -->
+<div class="section">
+  <div class="section-title">Certifications</div>
+  <ul class="cert-list">
+    <li><strong>Building Intelligent Agents with Generative AI</strong> — NHCE (Oct 2025)</li>
+    <li><strong>AI For All</strong> — Intel (Jul 2025) &nbsp;|&nbsp; <strong>Gen AI Powered Data Analytics</strong> — Forage (Jul 2025)</li>
+    <li><strong>Hands-on with Azure Cloud &amp; AI Fundamentals</strong> — NHCE (Oct 2025)</li>
+  </ul>
+</div>
+
+<!-- ═══════════ ACHIEVEMENTS & LEADERSHIP ═══════════ -->
+<div class="section">
+  <div class="section-title">Achievements &amp; Leadership</div>
+  <ul class="ach-list">
+    <li><strong>2nd Place — Srujana 2025 Hackathon</strong> (Chanakya University), awarded by Former ISRO Chairman.</li>
+    <li><strong>TEDx NHCE Board Member (2025–2026)</strong> — Led event planning, content coordination, and stakeholder communication.</li>
+    <li>Participated in <strong>10+ national-level hackathons</strong>, leading project documentation and team communication.</li>
+    <li>Open-source contributor maintaining <strong>70+ public repositories</strong> on GitHub with CI/CD workflows.</li>
+  </ul>
+</div>
+
+</body>
+</html>

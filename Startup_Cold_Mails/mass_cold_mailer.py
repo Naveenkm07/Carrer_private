@@ -9,7 +9,7 @@ from tempfile import NamedTemporaryFile
 # ==========================================
 # CONFIGURATION
 # ==========================================
-DRY_RUN = True  # Set to False when you are ready to actually send emails!
+DRY_RUN = False  # Set to False when you are ready to actually send emails!
 MAX_EMAILS_PER_DAY = 50
 DELAY_SECONDS = 60  # Wait 60 seconds between emails to avoid spam filters
 
