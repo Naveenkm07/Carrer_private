@@ -33,7 +33,7 @@
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "dotenv": "^16.6.1",
+    "dotenv": "^18.0.0",
     "js-yaml": "^4.1.1",
     "libsodium-wrappers": "^0.8.4",
     "nodemailer": "^8.0.7",
