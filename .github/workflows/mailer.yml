@@ -1,13 +1,16 @@
-name: Auto Mailer Campaign
+name: Daily 100 Startups Outreach
 
 on:
-  workflow_dispatch: # Allows manual trigger from GitHub website
+  schedule:
+    # 03:30 UTC is exactly 09:00 AM IST (India Standard Time)
+    - cron: '30 3 * * *'
+  workflow_dispatch: # Allows manual one-click trigger anytime from GitHub web/mobile
 
 permissions:
-  contents: write # Allows GitHub to commit the progress
+  contents: write
 
 jobs:
-  run-mailer:
+  daily-outreach:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -21,16 +24,16 @@ jobs:
       - name: Install Dependencies
         run: npm install nodemailer dotenv
 
-      - name: Run Mailer Script
+      - name: Run Daily 100 Outreach Batch
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        run: node auto-mailer.mjs
+        run: node auto-daily-campaign.mjs --run-now --limit=100
 
-      - name: Commit and Push Progress
+      - name: Commit and Push Daily Progress
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add output/bulk_campaign/_SENT/ || true
-          git commit -m "chore: save mailer progress [skip ci]" || echo "No new emails sent"
+          git add output/hsr_campaign/ data/applications.md
+          git commit -m "chore: automated daily 100 outreach update [skip ci]" || echo "No changes to commit"
           git push
