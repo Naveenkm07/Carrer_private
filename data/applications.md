@@ -11,7 +11,7 @@
 | 7 | 2026-10-13 | DrinkPrime | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to hr@drinkprime.in |
 | 8 | 2026-10-13 | Khatabook | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to careers@khatabook.com |
 | 9 | 2026-10-13 | SuperOps.ai | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to careers@superops.ai |
-| 10 | 2026-10-13 | Codingal | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to hr@codingal.com |
+| 10 | 2026-10-13 | Codingal | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to careers@codingal.com (per HR reply) |
 | 11 | 2026-10-13 | Eloelo | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to hr@eloelo.com |
 | 12 | 2026-10-13 | Headout | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to careers@headout.com |
 | 13 | 2026-10-13 | NestAway | Software Engineer | 4.20/5 | applied | [PDF](../resume.pdf) | Sent to careers@nestaway.com |

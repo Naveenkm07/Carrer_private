@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Mailer is running!\n');
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
     console.log(`Dummy web server listening on port ${PORT}`);
 });
@@ -44,13 +44,17 @@ Naveen Kumar K M
 
 async function sendMail(to, companyName) {
     const safeCompanyName = companyName.replace(/[^a-zA-Z0-9]/g, '_');
-    const resumePath = 'resume_ai_07.pdf';
-
+    let resumePath = 'resume.pdf';
     try {
         await fs.access(resumePath);
-    } catch (e) {
-        console.error(`❌ Resume not found: ${resumePath}`);
-        return false;
+    } catch {
+        resumePath = 'resume_ai_07.pdf';
+        try {
+            await fs.access(resumePath);
+        } catch (e) {
+            console.error(`❌ Resume not found: resume.pdf or resume_ai_07.pdf`);
+            return false;
+        }
     }
 
     const mailOptions = {
